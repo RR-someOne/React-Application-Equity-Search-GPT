@@ -1,0 +1,81 @@
+.stockPal-search-centered {
+    /*height: 20vh; !* Magic here *!*/
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    width: 100%;
+    /*margin-top:200px;*/
+    height: 40vh;
+    /*margin-top: -60px;*/
+    /*margin-bottom: 400px;*/
+}
+
+.stockPal-search-centered-heading {
+    height: 70vh; /* Magic here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: auto;
+    font-style: italic;
+}
+
+.stockPal-search-margins{
+  width: 600px;
+}
+
+.stockPal-search-heading-font-size {
+    font-size: 60px;
+    border:groove;
+    padding:20px
+}
+
+.social-logo-search-heading {
+    color: #282c34;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+
+.stock-pal-search {
+    margin-top:120px;
+    /*max-width: 500px;*/
+    /*margin-left: -200px;*/
+}
+
+
+.stock-pal-search-name {
+    margin-top: 30px
+}
+
+.stock-pal-star-icon-margin {
+    margin-left: 5px;
+}
+
+.stock-pal-heading-company {
+    margin-top: 40px
+}
+
+.stock-pal-margin-nav-pills {
+    margin-top: 40px;
+}
+
+.stock-pal-pill-heading-margin {
+    margin-right: 200px;
+}
+
+.stock-pal-tabs-margin {
+    margin-top: 40px;
+}
+
+.stock-pal-heading-search {
+    margin-top: 130px;
+    margin-bottom: -100px;
+    text-align: center;
+}

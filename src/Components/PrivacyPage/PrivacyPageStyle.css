@@ -1,0 +1,20 @@
+.stock-heading-privacy-page {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.stock-content-privacy-page {
+    text-align: center;
+    margin-top: 40px;
+    border-style: inset;
+    padding: 25px;
+}
+
+.stock-button-privacy-page-accept {
+    margin-right: 3px;
+    width:170px
+}
+
+.stock-button-privacy-page-reject {
+    width:170px
+}

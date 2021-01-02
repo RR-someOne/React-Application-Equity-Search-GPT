@@ -1,0 +1,57 @@
+/*body {*/
+/*    background: white;*/
+/*}*/
+
+.wbdv-signup-anchor {
+    float: right
+}
+
+.wbdv-container {
+    max-width: 700px;
+    /*position: ;*/
+    margin-top: -200px;
+    /*margin: 0 auto;*/
+    padding: 15px 40px 50px;
+    /*margin-top: 163px;*/
+    background-color: white;
+    /*padding-top: 38px;*/
+    /*padding-bottom: 50px;*/
+
+}
+
+.middle {
+    text-align: center;
+    width: 104%;
+}
+
+.icon-login {
+    color: white;
+}
+
+
+.wbdv-register-page-margins {
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+.stockpal-width-form {
+    /*max-width: 500px;*/
+}
+
+.stock-pal-heading-login {
+    text-align: center;
+    margin-top:150px;
+    margin-bottom: -200px;
+}
+
+.stockPal-login-heading-font-size {
+    /*font-size: 60px;*/
+    border:groove;
+    padding:80px 80px 80px;
+}
+
+.stockPal-icon-user {
+    justify-items: center;
+    margin-top: 50px;
+    /*margin-bottom: -500px;*/
+}

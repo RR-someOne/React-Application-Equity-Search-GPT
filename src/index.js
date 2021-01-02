@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Provider} from "react-redux"
+import {combineReducers, createStore} from "redux";
+import HomePageComponent from "./Components/HomePageMain/HomePageComponent";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.css";
+import RouterManagerComponent from "./Components/RouterManager/RouterManagerComponent";
+import searchReducer from "./Reducers/SearchReducer";
+
+const reducers = combineReducers({
+    searchReducer: searchReducer
+})
+
+const store = createStore(reducers);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <Provider store = {store}>
+        <RouterManagerComponent/>
+    </Provider>,
   document.getElementById('root')
 );
 
