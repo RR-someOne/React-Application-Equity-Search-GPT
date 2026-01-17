@@ -15,25 +15,25 @@ class RouterManagerComponent extends React.Component {
             <BrowserRouter>
                 <Switch>
                     <div>
-                        <Route path={["/stockPal/home", "/stockPal/home/:title"]} exact>
+                        <Route path={["/FinanceSearch/Home", "/FinanceSearch/Home/:title"]} exact>
                             <HomePageComponent/>
                         </Route>
 
-                        <Route path={["/stockPal/login"]} exact>
+                        <Route path={["/FinanceSearch/login"]} exact>
                             <LoginPage/>
                         </Route>
 
-                        {/*//TODO: Build the stockPal search page*/}
-                        <Route path={["/stockPal/search", "/stockPal/search/:title",
-                            "/stockPal/search/summary"]} exact>
+                        {/*//TODO: Build the FinanceSearch search page*/}
+                        <Route path={["/Finance/Search", "/Finance/Search/:title",
+                            "/Finance/Search/summary"]} exact>
                             <HomePageSearch/>
                         </Route>
 
-                        <Route path={["/stockPal"]} exact>
+                        <Route path={["/FinanceSearch"]} exact>
                             <PrivacyPageComponent/>
                         </Route>
 
-                        <Route path={["/stockPal/register"]} exact>
+                        <Route path={["/FinanceSearch/register"]} exact>
                             <RegisterComponent/>
                         </Route>
                     </div>

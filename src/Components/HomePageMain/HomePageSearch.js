@@ -65,8 +65,8 @@ class SearchComponent extends React.Component {
     }
 
     searchByTitle = (title) => {
-        this.props.history.push(`/stockPal/search/${title}`)
-        // this.props.history.push(`/stockPal/search/${title}`)
+        this.props.history.push(`/Finance/Search/${title}`)
+        // this.props.history.push(`/Finance/Search/${title}`)
     }
 
     render() {
@@ -80,7 +80,7 @@ class SearchComponent extends React.Component {
             {/*</div>*/}
             {/*<div className="stockPal-search-centered">*/}
                 <div>
-                    <h1 className="stock-pal-heading-search">Stock Pal</h1>
+                    <h1 className="stock-pal-heading-search">Finance Search</h1>
                 </div>
                 <div className="input-group stock-pal-search">
                     {/*<div className="col-sm-7">*/}
@@ -125,18 +125,18 @@ class SearchComponent extends React.Component {
                     <Tabs className="stock-pal-tabs-margin">
                         <TabList>
                             <Tab>
-                                        <Link to ={`/stockPal/search/`} className = "nav-link active text-dark">
+                                        <Link to ={`/Finance/Search/`} className = "nav-link active text-dark">
                                             Summary
                                         </Link>
                                 {/*Summary*/}
                             </Tab>
                             <Tab>
-                                <Link to ={`/stockPal/search/`} className = "nav-link active text-dark">
+                                <Link to ={`/Finance/Search/`} className = "nav-link active text-dark">
                                     Top News
                                 </Link>
                             </Tab>
                             <Tab>
-                                <Link to ={`/stockPal/search/`} className = "nav-link active text-dark">
+                                <Link to ={`/Finance/Search/`} className = "nav-link active text-dark">
                                     Charts
                                 </Link>
                             </Tab>

@@ -1,82 +1,53 @@
-import React from "react"
+import React, { useState } from "react"
 import {connect} from "react-redux"
 import {NavLink} from "react-router-dom"
+import LoginModal from "../LoginPageMain/LoginModal"
 import "./WebPageHeader.Style.css"
 
-const WebPageHeaderComponent = (history) =>
-    <div className="container">
-        <div className="container-fluid">
-        <div className="fixed-top">
-            <nav className="navbar navbar-expand-lg navbar-dark stock-webpage-header">
-                {/*<a className="navbar-brand" href="#">*/}
-                {/*    <img src="https://1000logos.net/wp-content/uploads/2020/04/Nasdaq-Logo.png" width="80" height="60" alt=""*/}
-                {/*         loading="lazy"/>*/}
-                {/*</a>*/}
+const WebPageHeaderComponent = (history) => {
+    const [isLoginModalOpen, setIsLoginModalOpen] = useState(false)
 
-                <NavLink className="navbar-brand"
-                         to="/stockPal/home"><span className="sr-only">
-                        (current)</span>
-                    StockPal
-                </NavLink>
+    return (
+        <>
+            <div className="finance-header">
+                <div className="header-content">
+                    {/* Search Bar */}
+                    <div className="header-search">
+                        <div className="search-box">
+                            <input 
+                                type="text" 
+                                placeholder="Symbols, Analysts, Keywords"
+                                className="search-input"
+                            />
+                            <button className="search-button">
+                                <i className="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
 
-                <div className="collapse navbar-collapse wbdv-button wbdv-list-layout wbdv-padding" id="navbarSupportedContent">
-                    <ul className="navbar-nav mr-auto">
-                        <li className="nav-item nav-link">
-                <NavLink className="navbar-brand"
-                         to="/stockPal/login"><span className="sr-only">
-                        (current)</span>
-                    Login
-                </NavLink>
-                        </li>
-
-                        <li className="nav-item nav-link">
-                <NavLink className="navbar-brand"
-                         to="/stockPal/register"><span className="sr-only">
-                        (current)</span>
-                    Register
-                </NavLink>
-                        </li>
-
-                        <li className="nav-item nav-link">
-                <NavLink className="navbar-brand"
-                         to="/stockPal"><span className="sr-only">
-                        (current)</span>
-                    Profile
-                </NavLink>
-                        </li>
-
-                        <li className="nav-item nav-link">
-                            <NavLink className="navbar-brand"
-                                     to="/stockPal/search"><span className="sr-only">
-                        (current)</span>
-                                Search
-                            </NavLink>
-                        </li>
-
-                        <li className="nav-item nav-link">
-                {/*<NavLink className="navbar-brand"*/}
-                {/*         to="/stockPal"><span className="sr-only">*/}
-                {/*        (current)</span>*/}
-                {/*    Privacy Page*/}
-                {/*</NavLink>*/}
-                        </li>
-                    </ul>
+                    {/* Navigation Links */}
+                    <div className="header-nav">
+                        <NavLink to="/Finance/Search" className="nav-item">ABOUT PREMIUM</NavLink>
+                        <NavLink to="/FinanceSearch/register" className="nav-item btn-primary">CREATE FREE ACCOUNT</NavLink>
+                        <button 
+                            className="nav-item log-in-btn"
+                            onClick={() => setIsLoginModalOpen(true)}
+                        >
+                            LOG IN
+                        </button>
+                    </div>
                 </div>
-            </nav>
-        </div>
-        </div>
-    </div>
+            </div>
 
+            <LoginModal 
+                isOpen={isLoginModalOpen} 
+                onClose={() => setIsLoginModalOpen(false)}
+            />
+        </>
+    )
+}
 
-
-
-const stateToPropertyMapper = (state) => ({
-
-})
-
-const propertyToDispatchMapper = (dispatch) => ({
-
-
-})
+const stateToPropertyMapper = (state) => ({})
+const propertyToDispatchMapper = (dispatch) => ({})
 
 export default connect(stateToPropertyMapper, propertyToDispatchMapper)(WebPageHeaderComponent);

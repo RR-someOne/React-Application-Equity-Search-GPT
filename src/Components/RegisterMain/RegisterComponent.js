@@ -1,6 +1,7 @@
 import React from "react";
 import {connect} from "react-redux"
 import WebPageHeaderComponent from "../HomePageHeaderAndFooter/WebPageHeaderComponent";
+import {onChangeUsername} from "../../Actions/RegisterAction";
 import "./Register.css"
 
 const RegisterComponent = ({
